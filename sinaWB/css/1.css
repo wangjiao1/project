@@ -1,0 +1,894 @@
+.backgroundImg {
+    width: 100%;
+    height: 5000px;
+    background: url("../img/7bb95ea1jw1e4jamhyfrvj20g40qpdgz.jpg");
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+}
+
+.navBg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    border-top: 2px solid #fa7d3c;
+    background: #fff;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.navHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.navOuter {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid #fa7d3c;
+    background: #fff;
+}
+
+.nav {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.nav .logo {
+    display: inline-block;
+    padding: 10px 0 0 20px;
+}
+
+.searchInput {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 538px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    background: #f2f2f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.nav ul.home {
+    position: absolute;
+    top: 13px;
+    left: 750px;
+    padding-right: 50px;
+    border-right: 1px solid silver;
+}
+
+.nav ul.home li {
+    float: left;
+    height: 26px;
+    margin-left: 20px;
+}
+
+.nav ul.home li a {
+    color: #333;
+    font-size: 14px;
+}
+
+.nav ul.home li i {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    vertical-align: bottom;
+    background: url("../img/navIcon.png") no-repeat;
+}
+
+.nav ul.home li.main i {
+    background: url("../img/home.png") no-repeat;
+}
+
+.nav ul.home li.find i {
+    background-position: 0px -40px;
+}
+
+.nav ul.home li.game i {
+    background-position: 0px -60px;
+}
+
+.nav ul.home li.user i {
+    background-position: 0px -80px;
+}
+
+.nav ul.home li a:hover {
+    color: #fa7d3c;
+}
+
+.nav ul.home li.main a:hover i {
+    background: url("../img/navIcon.png") no-repeat 0px -20px;
+}
+
+.nav ul.home li.find a:hover i {
+    background-position: -40px -40px;
+}
+
+.nav ul.home li.game a:hover i {
+    background-position: -40px -60px;
+}
+
+.nav ul.home li.user a:hover i {
+    background-position: -40px -80px;
+}
+/*nav右侧的设置功能*/
+.setting {
+    position: absolute;
+    top: 16px;
+    right: 31px;
+}
+.setting .settingLine{
+    float: left;
+    display: inline;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 0 0 21px;
+}
+
+.setting .messageSetting{
+    float: left;
+    display: inline;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 0 0 21px;
+}
+.setting  .messageAll{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: url("../img/navIcon.png") no-repeat 0px -99px;
+}
+/*信息提醒下拉菜单*/
+.setting div.messageSettingList {
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: -19px;
+    z-index: 9998;
+    width: 144px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 2px;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.2);
+}
+
+.setting .messageSettingList ul li{
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+.setting .messageSettingList ul li a{
+    white-space: nowrap;
+    min-width: 50px;
+    padding: 9px 13px;
+    line-height: 1em;
+    color: #333;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.setting .messageSettingList ul li a:hover{
+    position: relative;
+    background-color: #f2f2f5;
+    text-decoration: none;
+    color: #eb7350;
+}
+
+.setting .messageSettingList ul li.line{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 0;
+    height: 2px;
+    position: relative;
+    top: -1px;
+    display: block;
+    margin: 0 -2px;
+}
+.setting .messageSettingList ul li.line1{
+    border-color: #f2f2f5;
+}
+.setting .messageSettingList ul li.line2{
+    border-color: #d9d9d9;
+}
+.setting .messageSettingList ul li.line7{
+    text-align: center;
+}
+.trangle{
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    top: -15px;
+    right: 20px;
+}
+.trangle i{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 7px solid #ccc;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    border-color: transparent transparent #ccc transparent;
+}
+.trangle em{
+    display: inline-block;
+    margin: 1px 0 0 -22px;
+    width: 0;
+    height: 0;
+    border: 7px solid #fff;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: top;
+    border-color:transparent transparent #fff transparent;
+}
+.setting .messageRemind{
+    display: none;
+    min-width: 234px;
+    top: 34px;
+    right: -40px;
+    position: absolute;
+    z-index: 9998;
+    color: #333;
+    border: 1px solid #ffeebb;
+    border-radius: 0 0 3px 3px;
+    padding: 6px 2px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+    background: #fff9e0;
+    background: rgba(255,249,224,0.94);
+}
+.setting .messageRemind ul li{
+    white-space: nowrap;
+    padding: 9px 30px 9px 13px;
+    line-height: 1em;
+    font-size: 12px;
+}
+.setting .messageRemind ul li a{
+    color: #fa7d3c;
+}
+
+/*.setting .settingLineOne .messageAll:hover {*/
+    /*background-position: -40px -99px;*/
+/*}*/
+.setting .accountSettingList ul li{
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+.setting .accountSettingList ul li a{
+    white-space: nowrap;
+    min-width: 50px;
+    padding: 9px 13px;
+    line-height: 1em;
+    color: #333;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.setting .accountSetting .messageAll {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background: url("../img/navIcon.png") no-repeat 0px -120px;
+}
+
+.setting .accountSetting .messageAll:hover {
+    background-position: -40px -120px;
+}
+
+.setting .tryN .messageAll {
+    display: inline-block;
+    padding-top: 3px;
+    width: 25px;
+    height: 20px;
+    background: url("../img/navIcon.png") no-repeat 0px -140px;
+}
+
+.setting .tryN .messageAll:hover {
+    background-position: -40px -140px;
+}
+
+/*中间内容部分*/
+.contentBg {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -500px;
+    width: 1000px;
+    height: 4950px;
+    background: #6b8a83;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.content {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -500px;
+    padding-top: 15px;
+    width: 1000px;
+    height: 4950px;
+}
+
+.contentLeft {
+    float: left;
+    width: 150px;
+}
+
+.contentMain {
+    float: left;
+    margin-right: 10px;
+    width: 600px;
+}
+
+.contentRight {
+    float: right;
+    margin-right: 10px;
+    width: 230px;
+}
+
+.contentLeft ul li {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.listTop {
+    padding-bottom: 12px;
+}
+
+.listTop ul li a {
+    display: block;
+    padding-left: 15px;
+    width: 135px;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.contentLeft ul li a:hover {
+    background: #8da39b;
+}
+
+.listTop ul li i {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fa7d3c;
+    overflow: hidden;
+}
+
+.listTwo {
+    padding-top: 12px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 313px;
+}
+
+.listTwo ul {
+    height: 280px;
+}
+
+.listTwo ul a {
+    display: block;
+    padding-left: 33px;
+    width: 117px;
+    height: 100%;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.listTwo i {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.listTwo em {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    width: 22px;
+    height: 13px;
+    background: #ed741c;
+    border-radius: 3px;
+    font-style: normal;
+}
+
+.listTwo span {
+    position: absolute;
+    right: 17px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.write {
+    padding: 15px 10px 10px 10px;
+    height: 140px;
+    width: 580px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.write a.news {
+    float: right;
+    color: #76a513;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+div .count {
+    display: none;
+    float: right;
+    padding-top: 5px;
+}
+
+textarea {
+    margin-top: 7px;
+    padding: 5px;
+    width: 568px;
+    height: 68px;
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    word-wrap: break-word;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: inset 2px 2px 2px 0 #f1f1f1;
+}
+
+/*中间广告部分*/
+.ads {
+    position: relative;
+}
+
+.ads .close {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    width: 13px;
+    height: 13px;
+}
+
+.ads span.close {
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.ads a.close {
+    display: block;
+    background: url("../img/ico_btn_player.png") no-repeat 3px 3px;
+}
+
+/*右侧*/
+/*右侧个人信息部分*/
+.contentRight .personInfo {
+    position: relative;
+    width: 230px;
+    height: 165px;
+}
+
+.contentRight .bgPic {
+    overflow: hidden;
+}
+
+.contentRight .headPic {
+    position: absolute;
+    left: 88px;
+    top: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: -2px -2px 5px 0 #deb8d2;
+}
+
+.contentRight .headPic img {
+    width: 60px;
+    height: 60px;
+}
+
+.personInfo span.daren {
+    position: absolute;
+    left: 128px;
+    top: 75px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon.png") no-repeat -50px 0px;
+}
+
+.contentRight .info {
+    padding: 16px 16px 9px;
+    width: 198px;
+    height: 65px;
+    background: #fff;
+}
+
+.contentRight .nameBox {
+    height: 16px;
+    line-height: 16px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.contentRight .nameBox a.name {
+    max-width: 114px;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+    font-size: 14px;
+}
+
+.contentRight .nameBox a.vip {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("../img/icon.png") no-repeat 0px -200px;
+}
+
+.contentRight .nameBox a.scale {
+    display: inline-block;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+    width: 33px;
+    height: 14px;
+    background: #fd4d17;
+    border-radius: 5px;
+    color: #fff;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.contentRight .nameBox a.name:hover {
+    color: #76a513;
+}
+
+.infoBox {
+    height: 34px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.infoBox li {
+    float: left;
+    width: 65px;
+    text-align: center;
+    border-right: 1px solid #d9d9d9;
+}
+
+.infoBox li.lastInfo {
+    border-right-width: 0;
+}
+
+.infoBox li strong {
+    display: block;
+    font-weight: bold;
+    line-height: 18px;
+    width: 65px;
+    overflow: hidden;
+    color: #333;
+}
+
+.infoBox li span {
+    display: block;
+    width: 65px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #808080;
+}
+
+/*电影系列*/
+.contentRight .movie {
+    margin-top: 10px;
+    width: 230px;
+    height: 281px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.contentRight .movieHot {
+    width: 230px;
+    height: 39px;
+    border-bottom: 1px solid #f2f2f5;
+
+}
+
+.contentRight .movieHot a {
+    display: block;
+    padding: 10px 0 0 16px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contentRight .movieHot a:hover {
+    color: #76a513;
+}
+
+.contentRight .movieList li {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+.contentRight .movieList li a {
+    width: 100%;
+}
+
+.contentRight .movieList li i {
+    display: inline-block;
+    margin: 0 5px 0 28px;
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contentRight .movieList .overBefore {
+    height: 100%;
+}
+
+.contentRight .movieList i.circleRed {
+    background: #df3e3e;
+}
+
+.contentRight .movieList i.circleOrange {
+    background: #fa7d3c
+}
+
+.contentRight .movieList .overBefore span {
+    color: #333;
+    font-family: "Microsoft Yahei", Arial, SimSun;
+    font-size: 14px;
+}
+
+.contentRight .movieList em {
+    float: right;
+    margin-right: 16px;
+    font-style: normal;
+    font-size: 12px;
+    color: #808080;
+}
+
+.movieList .overAfter {
+    display: none;
+}
+
+.movieList .movieImg {
+    float: left;
+    margin: 6px;
+}
+
+.movieList img {
+    width: 72px;
+    height: 96px;
+}
+
+.movieList .movieName {
+    width: 131px;
+    height: 16px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.movieList .movieInfo .movieName i {
+    margin-left: 0;
+}
+
+.movieList .movieInfo a {
+    cursor: pointer;
+}
+
+.movieList .movieInfo .movieName a {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", Arial, SimSun;
+}
+
+.movieList .movieInfo .movieName a:hover {
+    color: #76a513;
+}
+
+.movieList .movieInfo p {
+    width: 131px;
+    height: 18px;
+    color: #808080;
+    line-height: 15px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.movieList .movieInfo em {
+    width: 24px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.contentRight .select .overAfter {
+    display: block;
+}
+
+.contentRight .select .overBefore {
+    display: none;
+}
+
+.contentRight .movieList li.select {
+    height: 108px;
+}
+
+.contentRight .movie .more a {
+    display: block;
+    padding-top: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.contentRight .movie .more a:hover {
+    color: #76a513;
+}
+
+.contentRight .recommend {
+    margin-top: 10px;
+    padding: 16px 22px;
+    width: 186px;
+    height: 250px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.hot {
+    margin-top: 10px;
+    width: 230px;
+    height: 351px;
+    background: #fff;
+}
+
+.hot .hotTopic {
+    width: 230px;
+    height: 39px;
+    line-height: 39px;
+}
+
+.hot .hotTopic .topic {
+    padding-left: 15px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hot .hotTopic .topic:hover {
+    color: #76a513;
+}
+
+.hot .hotTopic em {
+    display: inline-block;
+    width: 15px;
+    height: 21px;
+    vertical-align: middle;
+    background: url("../img/5.png") no-repeat 0px 1px;
+    margin-right: 5px;
+    font-size: 14px;
+    -webkit-text-stroke-width: 0.2px;
+}
+
+.hot .hotTopic .change {
+    width: 56px;
+    height: 14px;
+    float: right;
+    padding-right: 12px;
+    font-size: 12px;
+    color: #333;
+
+}
+
+.hot .hotTopic .change:hover {
+    color: #76a513;
+}
+
+.hot .hotTopic .change:hover em {
+    background: url("../img/6.png") no-repeat 0px 1px;
+}
+
+.hot .hotList {
+    padding: 16px;
+    width: 198px;
+    height: 244px;
+
+    border-top: 1px solid #f2f2f5;
+    border-bottom: 1px solid #f2f2f5;
+}
+
+.hot .hotList li {
+    position: relative;
+    width: 100%;
+    height: 28px;
+}
+
+.hot .hotList li a {
+    color: #333;
+    font-size: 12px;
+}
+
+.hot .hotList li.firstTopic {
+    height: 29px;
+}
+
+.hot .hotList li span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #808080;
+}
